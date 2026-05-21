@@ -46,7 +46,7 @@ if sys.stderr.encoding and sys.stderr.encoding.lower() != "utf-8":
 # ─────────────────────────────────────────────
 
 API_BASE = os.environ.get("LOKUMA_API_URL", "https://api.lokuma.ai").rstrip("/")
-API_VERSION = "v1"
+API_VERSION = os.environ.get("LOKUMA_API_VERSION", "v2")
 _BASE = f"{API_BASE}/{API_VERSION}"
 
 
