@@ -1,6 +1,6 @@
 {
   "name": "@lokuma/cli",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Install Lokuma design intelligence skill for AI coding assistants. One command to add professional UI/UX design guidance to Claude Code, Cursor, Windsurf, Copilot, and more.",
   "type": "module",
   "bin": {

@@ -157,7 +157,7 @@ def _format_output(result: dict, fmt: str) -> str:
     if warning:
         print(f"\n⚠️  {warning}\n", file=sys.stderr)
 
-    # ── New /v1/design response: domains + recommendation ─────────────────────
+    # ── Design response: domains + recommendation ─────────────────────
     # V2 (2026-05-21): server now renders a complete self-contained markdown
     # brief. Client just returns recommendation directly — no Domain Matches
     # prepend (anti-leak), no IMAGE_REMINDER (server handles it).

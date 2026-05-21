@@ -60,7 +60,6 @@ function persistKey(key: string): string {
     ...existing,
     apiKey: key,
     apiBase: existing.apiBase ?? DEFAULT_API_URL,
-    apiVersion: existing.apiVersion ?? 'v2',
   };
   writeFileSync(configFile, JSON.stringify(merged, null, 2) + '\n', { mode: 0o600 });
   return configFile;
