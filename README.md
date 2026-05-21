@@ -1,11 +1,11 @@
-# lokuma-cli
+# @lokuma/cli
 
-Install [Lokuma](https://lokuma.io) design intelligence skill for AI coding assistants.
+Install [Lokuma](https://lokuma.ai) design intelligence skill for AI coding assistants.
 
 ## Quick Start
 
 ```bash
-npx lokuma-cli init --ai claude
+npx @lokuma/cli init --ai claude
 ```
 
 Already installed and just want the latest CLI?
@@ -48,7 +48,7 @@ After installing, set your API key:
 export LOKUMA_API_KEY=lokuma_your_key_here
 ```
 
-Get your API key at [lokuma.io](https://lokuma.io).
+Get your API key at [lokuma.ai](https://lokuma.ai).
 
 ## Options
 

@@ -6,6 +6,33 @@ Format: [Semantic Versioning](https://semver.org) — `Added` / `Changed` / `Fix
 
 ---
 
+## [2.0.1] - 2026-05-21
+
+### Fixed
+- `design.py`: default `API_VERSION` changed from `v1` to `v2`, matching the production V2 design pipeline. Can be overridden via `LOKUMA_API_VERSION` env var.
+- `update` command: replaced trial installer (pointing to private repo `Mumu090909/lokuma-da-v2-trial`) with `npm install -g @lokuma/cli`
+
+### Changed
+- README: fixed install command from `npx lokuma-cli init` to `npx @lokuma/cli init`
+
+---
+
+## [2.0.0] - 2026-05-21
+
+### Changed
+- **Breaking**: npm package renamed from `lokuma-cli` → `@lokuma/cli` (scoped npm org)
+- `bin` unchanged (`lokuma`), so `npx @lokuma/cli` and `lokuma` both work
+- `design.py`: V2-adapted output — strips Domain Matches summary and IMAGE_REMINDER, returns pure design brief
+- Generated `SKILL.md`: skill name `frontend-designer` (production, removed trial banners)
+- Skill install paths: subdirectory renamed from `lokuma-v2-trial` → `lokuma`
+- Auth config: `~/.lokuma/config.json` with `apiBase: https://api.lokuma.ai`
+- API key prefix: `lokuma_` (production key format)
+
+### Removed
+- All V2 trial references from CLI output, auth messages, and install prompts
+
+---
+
 ## [1.4.11] - 2026-04-03
 
 ### Fixed
