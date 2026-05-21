@@ -1,0 +1,55 @@
+{
+  "name": "@lokuma/cli",
+  "version": "1.0.0",
+  "description": "Install Lokuma design intelligence skill for AI coding assistants. One command to add professional UI/UX design guidance to Claude Code, Cursor, Windsurf, Copilot, and more.",
+  "type": "module",
+  "bin": {
+    "lokuma": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js --format=esm --external:commander --external:chalk --external:ora --external:prompts",
+    "dev": "node --loader ts-node/esm src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "lokuma",
+    "ui",
+    "ux",
+    "design",
+    "claude",
+    "cursor",
+    "windsurf",
+    "copilot",
+    "kiro",
+    "codex",
+    "ai",
+    "skill"
+  ],
+  "author": "Lokuma <hello@lokuma.ai>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "ora": "^8.1.1",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.14",
+    "@types/node": "^22.10.1",
+    "@types/prompts": "^2.4.9",
+    "esbuild": "^0.27.4",
+    "typescript": "^5.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lokuma-web/lokuma-cli.git"
+  },
+  "homepage": "https://lokuma.ai",
+  "bugs": {
+    "url": "https://github.com/lokuma-web/lokuma-cli/issues"
+  }
+}
